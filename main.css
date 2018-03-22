@@ -32,7 +32,7 @@ video {
   left: 50%;
   transform: translate(-50%, -50%);
   object-fit: cover;
-  /*filter: grayscale(1) contrast(1.5);*/
+  filter: saturate(2);
 }
 
 .cover {
@@ -66,6 +66,7 @@ video {
 }
 
 h2 {
+  font-family: arial, sans-serif;
   font-weight: normal;
   font-size: 20px;
   line-height: 1.5;
