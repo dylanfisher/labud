@@ -5,7 +5,7 @@
 }
 
 @font-face {
-    font-family: 'banglarelliregular';
+    font-family: 'banglarelli-regular';
     src: url('fonts/banglarelli-webfont.woff2') format('woff2'),
          url('fonts/banglarelli-webfont.woff') format('woff');
     font-weight: normal;
@@ -13,7 +13,7 @@
 }
 
 body {
-  font-family: "banglarelliregular", arial;
+  font-family: "banglarelli-regular", arial;
   font-weight: 100;
   background-color: var(--beige);
   -webkit-font-smoothing: antialiased;
