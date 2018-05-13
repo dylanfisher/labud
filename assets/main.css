@@ -21,6 +21,7 @@ body {
    line-height: 1.6;
    margin: 0;
    overflow-x: hidden;
+   overflow-y: hidden;
 }
 
 a {
@@ -64,11 +65,11 @@ a:hover {
 
 @media only screen and (max-width: 768px){
     /* For mobile phones: */
-    [class*="services"] {
+    .services {
         position: relative;
         max-width:100%;
     }
-    [class*="container"] {
+    body {
         overflow-y: scroll;
     }
 }
