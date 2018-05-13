@@ -31,6 +31,10 @@ a {
   transition: all 100ms ease-out;
 }
 
+.secret {
+  border-bottom: none;
+}
+
 a:hover {
   border-bottom: 1px dotted;
   cursor: ne-resize;
@@ -63,9 +67,16 @@ a:hover {
   bottom: 3em;
 }
 
+.social {
+  max-width: 50%;
+  position: absolute;
+  right: 3em;
+  bottom: 3em;
+}
+
 @media only screen and (max-width: 768px){
     /* For mobile phones: */
-    .services {
+    .services, .social {
         position: relative;
         max-width:100%;
     }
@@ -92,7 +103,7 @@ h1 {
   font-size: 62px;
 }
 
-.services p {
+.services p, .social p {
   font-size: 20px;
 }
 
