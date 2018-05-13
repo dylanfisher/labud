@@ -19,9 +19,13 @@ body {
   -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
    line-height: 1.6;
-   margin: 0;
    overflow-x: hidden;
    overflow-y: hidden;
+}
+
+html, body{
+  margin: 0;
+  height: 100%;
 }
 
 a {
@@ -41,13 +45,6 @@ a:hover {
 }
 
 /* structure*/
-.container {
-  overflow-y: hidden;
-}
-
-.content {
-  padding:3em;
-}
 
 .spacing-large {
   margin-bottom: 100px;
@@ -58,7 +55,7 @@ a:hover {
 }
 
 .spacing-small {
-  margin-bottom: 20px;
+  margin-bottom: 1vw;
 }
 
 .services {
@@ -72,7 +69,11 @@ a:hover {
   position: absolute;
   right: 3em;
   bottom: 3em;
-  float: right;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 3em;
 }
 
 @media only screen and (max-width: 768px){
@@ -80,10 +81,19 @@ a:hover {
     .services, .social {
         position: relative;
         max-width:100%;
-        margin-top: 100px;
+    }
+    .social {
+      right: 0;
     }
     body {
         overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    h1 {
+      font-size: 28px;
+    }
+    .services p, .social p {
+      font-size: 18px;
     }
 }
 
@@ -102,7 +112,7 @@ h1 {
 
 .marker {
   color: white;
-  font-size: 62px;
+  font-size: 65px;
 }
 
 .services p, .social p {
