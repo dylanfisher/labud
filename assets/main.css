@@ -1,0 +1,153 @@
+/*variables*/
+:root {
+  --beige: #FFF4E4;
+  --blue: #4A58B0;
+}
+
+@font-face {
+    font-family: 'banglarelliregular';
+    src: url('fonts/banglarelli-webfont.woff2') format('woff2'),
+         url('fonts/banglarelli-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  font-family: "banglarelliregular", arial;
+  font-weight: 100;
+  background-color: var(--beige);
+  -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   line-height: 1.6;
+   margin: 0;
+   overflow-x: hidden;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid;
+  transition: all 100ms ease-out;
+}
+
+a:hover {
+  border-bottom: 1px dotted;
+  cursor: ne-resize;
+}
+
+/* structure*/
+.container {
+  overflow-y: hidden;
+}
+
+.content {
+  padding:3em;
+}
+
+.spacing-large {
+  margin-bottom: 100px;
+}
+
+.spacing-medium {
+  margin-bottom: 60px;
+}
+
+.spacing-small {
+  margin-bottom: 20px;
+}
+
+.services {
+  max-width: 50%;
+  position: absolute;
+  bottom: 0;
+}
+
+@media only screen and (max-width: 768px){
+    /* For mobile phones: */
+    [class*="services"] {
+        position: relative;
+        max-width:100%;
+    }
+    [class*="container"] {
+        overflow-y: scroll;
+    }
+}
+
+@media only (min-height: 670px){
+  [class*="services"] {
+    position: relative;
+  }
+}
+
+/*typography*/
+
+h1 {
+  font-size: 40px;
+  font-weight: normal;
+}
+
+.marker {
+  color: white;
+  font-size: 62px;
+}
+
+.services p {
+  font-size: 20px;
+}
+
+/*clouds*/
+.clouds img {
+  position: absolute;
+}
+
+.back img{
+  z-index: -1;
+}
+
+.front img {
+  z-index: 0;
+}
+
+.cloud-1 {
+  max-width: 550px;
+  left: -50px;
+  top: 330px;
+}
+
+.cloud-2 {
+  max-width: 1200px;
+  min-width: 700px;
+  right: -300px;
+  top: -100px;
+}
+
+.cloud-3 {
+  max-width: 850px;
+  top: -230px;
+  left: -400px;
+}
+
+.cloud-4 {
+  max-width: 250px;
+  left: 50%;
+  top: 40%;
+}
+
+.cloud-5 {
+  max-width: 115px;
+  left: 45%;
+  top: 60%;
+}
+
+.cloud-6 {
+  max-width: 1480px;
+  min-width: 900px;
+  right: -400px;
+  bottom: -100px;
+}
+
+.cloud-7 {
+  max-width: 300px;
+  top: 60%;
+  left: 10%;
+}
