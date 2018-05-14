@@ -190,7 +190,7 @@ h1 {
     }
 
     .clouds {
-      overflow-y: scroll
+      overflow-y: scroll;
       height: auto;
     }
     body {
