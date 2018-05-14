@@ -51,8 +51,12 @@ a:hover {
 
 .services,
 .social {
-  max-width: 50%;
-  display: inline-block;
+  width: 50%;
+  font-size: 20px;
+}
+
+.social {
+  text-align: right;
 }
 
 .container {
@@ -69,6 +73,8 @@ a:hover {
 
 .footer {
   padding: 0 3em 3em;
+  display: flex;
+  align-items: flex-end;
 }
 
 .site-content {
@@ -88,13 +94,9 @@ h2 {
   font-size: 75px;
 }
 
-.services,
-.social {
-  font-size: 20px;
-}
-
 .hoverable {
   position: relative;
+  z-index: 1;
 }
 
 .hoverable:hover {
@@ -115,14 +117,6 @@ h2 {
 
 .clouds img {
   position: absolute;
-}
-
-.back img{
-  z-index: -1;
-}
-
-.front img {
-  z-index: 0;
 }
 
 .cloud-1 {
@@ -317,22 +311,24 @@ h2 {
 }
 
 @media only screen and (max-width: 768px) {
+  .footer {
+    padding: 0 15px 15px;
+    display: block;
+  }
+
   .services,
   .social {
     position: relative;
-    max-width: 100%;
+    width: 100%;
   }
 
   .social {
     right: 0;
+    text-align: left;
   }
 
   .site-content {
     padding: 15px;
-  }
-
-  .footer {
-    padding: 0 15px 15px;
   }
 
   .clouds {
