@@ -191,12 +191,9 @@ h1 {
 
     .clouds {
       overflow-y: scroll;
-      height: auto;
+      height: 1500px;
     }
-    body {
-        overflow-y: scroll;
-        overflow-x: hidden;
-    }
+
     h1 {
       font-size: 30px;
     }
