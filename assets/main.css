@@ -1,41 +1,33 @@
-/*variables*/
-::selection {
-  background-color: #FFF4E4;
-  }
-
-
-:root {
-  --beige: #FFF4E4;
-  --blue: #4A58B0;
+@font-face {
+  font-family: 'nikas-banglarelli-regular';
+  src: url('fonts/banglarelli-webfont.woff2') format('woff2'),
+       url('fonts/banglarelli-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
-@font-face {
-    font-family: 'nikas-banglarelli-regular';
-    src: url('fonts/banglarelli-webfont.woff2') format('woff2'),
-         url('fonts/banglarelli-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+::selection {
+  background-color: #FFF4E4;
+}
+
+html,
+body{
+  margin: 0;
+  height: 100%;
 }
 
 body {
   font-family: "nikas-banglarelli-regular", arial;
   font-weight: 100;
-  background-color: var(--beige);
+  background-color: #FFF4E4;
   -webkit-font-smoothing: antialiased;
-   -moz-osx-font-smoothing: grayscale;
-   line-height: 1.6;
-}
-
-html, body{
-  margin: 0;
-  height: 100%;
+  line-height: 1.6;
 }
 
 a {
   color: black;
   text-decoration: none;
   border-bottom: 1px solid;
-  transition: all 100ms ease-out;
 }
 
 .secret {
@@ -49,10 +41,6 @@ a:hover {
 
 /* structure*/
 
-.spacing-large {
-  margin-bottom: 100px;
-}
-
 .spacing-medium {
   margin-bottom: 60px;
 }
@@ -61,38 +49,56 @@ a:hover {
   margin-bottom: 1vw;
 }
 
-.services {
-  max-width: 50%;
-  position: absolute;
-  bottom: 3em;
-}
-
+.services,
 .social {
   max-width: 50%;
-  position: absolute;
-  right: 3em;
-  bottom: 3em;
+  display: inline-block;
 }
 
 .container {
   margin: 0 auto;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  position: relative;
+}
+
+.site-content {
   padding: 3em;
+}
+
+.footer {
+  padding: 0 3em 3em;
+}
+
+.site-content {
+  flex: 1;
 }
 
 /*typography*/
 
-h1 {
+h1,
+h2 {
   font-size: 50px;
   font-weight: normal;
+  margin: 0;
 }
 
 .marker {
-  color: #fff;
   font-size: 75px;
 }
 
-.services p, .social p {
+.services,
+.social {
   font-size: 20px;
+}
+
+.hoverable {
+  position: relative;
+}
+
+.hoverable:hover {
+  z-index: 2;
 }
 
 /*clouds*/
@@ -103,7 +109,8 @@ h1 {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: 1;
+  pointer-events: none;
 }
 
 .clouds img {
@@ -123,7 +130,6 @@ h1 {
   left: -50px;
   top: 330px;
   -webkit-animation: cloud-1 80s linear infinite;
-  -moz-animation: cloud-1 80s linear infinite;
   -o-animation: cloud-1 80s linear infinite;
 }
 
@@ -142,7 +148,6 @@ h1 {
   right: -300px;
   top: -100px;
   -webkit-animation: cloud-2 101s linear infinite;
-  -moz-animation: cloud-2 101s linear infinite;
   -o-animation: cloud-2 101s linear infinite;
 }
 
@@ -161,7 +166,6 @@ h1 {
   top: -230px;
   left: -400px;
   -webkit-animation: cloud-3 155s linear infinite;
-  -moz-animation: cloud-3 155s linear infinite;
   -o-animation: cloud-3 155s linear infinite;
 }
 
@@ -179,7 +183,6 @@ h1 {
   left: 50%;
   top: 40%;
   -webkit-animation: cloud-4 100s linear infinite;
-  -moz-animation: cloud-4 100s linear infinite;
   -o-animation: cloud-4 100s linear infinite;
 }
 
@@ -197,7 +200,6 @@ h1 {
   left: 45%;
   top: 60%;
   -webkit-animation: cloud-5 121s linear infinite;
-  -moz-animation: cloud-5 121s linear infinite;
   -o-animation: cloud-5 121s linear infinite;
 }
 
@@ -216,7 +218,6 @@ h1 {
   right: -400px;
   bottom: 60px;
   -webkit-animation: cloud-6 97s linear infinite;
-  -moz-animation: cloud-6 97s linear infinite;
   -o-animation: cloud-6 97s linear infinite;
 }
 
@@ -229,14 +230,11 @@ h1 {
   }
 }
 
-
-
 .cloud-7 {
   max-width: 300px;
   top: 60%;
   left: 5%;
   -webkit-animation: cloud-7 120s linear infinite;
-  -moz-animation: cloud-7 120s linear infinite;
   -o-animation: cloud-7 120s linear infinite;
 }
 
@@ -254,7 +252,6 @@ h1 {
   right: -200px;
   top: 15%;
   -webkit-animation: cloud-8 110s linear infinite;
-  -moz-animation: cloud-8 110s linear infinite;
   -o-animation: cloud-8 110s linear infinite;
 }
 
@@ -270,9 +267,8 @@ h1 {
 .cloud-9 {
   max-width: 300px;
   left: 30%;
-  top: 10%;
+  top: 80%;
   -webkit-animation: cloud-9 170s linear infinite;
-  -moz-animation: cloud-9 170s linear infinite;
   -o-animation: cloud-9 170s linear infinite;
 }
 
@@ -285,13 +281,11 @@ h1 {
   }
 }
 
-
 .cloud-10 {
   max-width: 855px;
   left: -100px;
   bottom: -300px;
   -webkit-animation: cloud-10 150s linear infinite;
-  -moz-animation: cloud-10 150s linear infinite;
   -o-animation: cloud-10 150s linear infinite;
 }
 
@@ -309,7 +303,6 @@ h1 {
   left: -100px;
   top: 680px;
   -webkit-animation: cloud-11 168s linear infinite;
-  -moz-animation: cloud-11 168s linear infinite;
   -o-animation: cloud-11 168s linear infinite;
 }
 
@@ -317,49 +310,52 @@ h1 {
   0% {
     transform: translateX(-10vw);
   }
+
   100% {
     transform: translateX(-100vw);
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .services,
+  .social {
+    position: relative;
+    max-width: 100%;
+  }
 
+  .social {
+    right: 0;
+  }
 
-@media only screen and (max-width: 768px){
-    /* For mobile phones: */
-    .services, .social {
-        position: relative;
-        max-width:100%;
-    }
-    .social {
-      right: 0;
-    }
+  .site-content {
+    padding: 15px;
+  }
 
-    .container {
-      padding: 1.5em;
-    }
+  .footer {
+    padding: 0 15px 15px;
+  }
 
-    .clouds {
-      overflow-y: scroll;
-      height: 1500px;
-    }
+  .clouds {
+    min-height: 1200px;
+    z-index: -1;
+  }
 
-    h1 {
-      font-size: 30px;
-    }
+  h1,
+  h2 {
+    font-size: 30px;
+  }
 
-    .marker {
-      font-size: 48px;
-    }
+  .marker {
+    font-size: 48px;
+  }
 
-
-
-
-    .services p, .social p {
-      font-size: 18px;
-    }
+  .services,
+  .social {
+    font-size: 18px;
+  }
 }
 
-@media only (min-height: 670px){
+@media only (min-height: 670px) {
   .services {
     position: relative;
   }
