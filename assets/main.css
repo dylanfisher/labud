@@ -122,14 +122,14 @@ h1 {
   max-width: 550px;
   left: -50px;
   top: 330px;
-  -webkit-animation: cloud-1 70s linear infinite;
-  -moz-animation: cloud-1 70s linear infinite;
-  -o-animation: cloud-1 70s linear infinite;
+  -webkit-animation: cloud-1 80s linear infinite;
+  -moz-animation: cloud-1 80s linear infinite;
+  -o-animation: cloud-1 80s linear infinite;
 }
 
 @-webkit-keyframes cloud-1 {
   0% {
-    transform: translateX(100vw);
+    transform: translateX(60vw);
   }
   100% {
     transform: translateX(-200vw);
@@ -141,9 +141,9 @@ h1 {
   min-width: 700px;
   right: -300px;
   top: -100px;
-  -webkit-animation: cloud-2 75s linear infinite;
-  -moz-animation: cloud-2 75s linear infinite;
-  -o-animation: cloud-2 75s linear infinite;
+  -webkit-animation: cloud-2 101s linear infinite;
+  -moz-animation: cloud-2 101s linear infinite;
+  -o-animation: cloud-2 101s linear infinite;
 }
 
 @-webkit-keyframes cloud-2 {
@@ -160,9 +160,9 @@ h1 {
   max-width: 812px;
   top: -230px;
   left: -400px;
-  -webkit-animation: cloud-3 100s linear infinite;
-  -moz-animation: cloud-3 100s linear infinite;
-  -o-animation: cloud-3 100s linear infinite;
+  -webkit-animation: cloud-3 155s linear infinite;
+  -moz-animation: cloud-3 155s linear infinite;
+  -o-animation: cloud-3 155s linear infinite;
 }
 
 @-webkit-keyframes cloud-3 {
@@ -196,14 +196,14 @@ h1 {
   max-width: 115px;
   left: 45%;
   top: 60%;
-  -webkit-animation: cloud-5 80s linear infinite;
-  -moz-animation: cloud-5 80s linear infinite;
-  -o-animation: cloud-5 80s linear infinite;
+  -webkit-animation: cloud-5 121s linear infinite;
+  -moz-animation: cloud-5 121s linear infinite;
+  -o-animation: cloud-5 121s linear infinite;
 }
 
 @-webkit-keyframes cloud-5 {
   0% {
-    transform: translateX(100vw);
+    transform: translateX(-20vw);
   }
   100% {
     transform: translateX(-100vw);
@@ -215,9 +215,9 @@ h1 {
   min-width: 900px;
   right: -400px;
   bottom: 60px;
-  -webkit-animation: cloud-6 90s linear infinite;
-  -moz-animation: cloud-6 90s linear infinite;
-  -o-animation: cloud-6 90s linear infinite;
+  -webkit-animation: cloud-6 97s linear infinite;
+  -moz-animation: cloud-6 97s linear infinite;
+  -o-animation: cloud-6 97s linear infinite;
 }
 
 @-webkit-keyframes cloud-6 {
@@ -253,14 +253,14 @@ h1 {
   max-width: 1000px;
   right: -200px;
   top: 15%;
-  -webkit-animation: cloud-8 98s linear infinite;
-  -moz-animation: cloud-8 98s linear infinite;
-  -o-animation: cloud-8 98s linear infinite;
+  -webkit-animation: cloud-8 110s linear infinite;
+  -moz-animation: cloud-8 110s linear infinite;
+  -o-animation: cloud-8 110s linear infinite;
 }
 
 @-webkit-keyframes cloud-8 {
   0% {
-    transform: translateX(100vw);
+    transform: translateX(-60vw);
   }
   100% {
     transform: translateX(-100vw);
@@ -271,14 +271,14 @@ h1 {
   max-width: 500px;
   left: 30%;
   top: 10%;
-  -webkit-animation: cloud-9 150s linear infinite;
-  -moz-animation: cloud-9 150s linear infinite;
-  -o-animation: cloud-9 150s linear infinite;
+  -webkit-animation: cloud-9 170s linear infinite;
+  -moz-animation: cloud-9 170s linear infinite;
+  -o-animation: cloud-9 170s linear infinite;
 }
 
 @-webkit-keyframes cloud-9 {
   0% {
-    transform: translateX(100vw);
+    transform: translateX(40vw);
   }
   100% {
     transform: translateX(-100vw);
@@ -297,12 +297,31 @@ h1 {
 
 @-webkit-keyframes cloud-10 {
   0% {
-    transform: translateX(100vw);
+    transform: translateX(60vw);
   }
   100% {
     transform: translateX(-100vw);
   }
 }
+
+.cloud-11 {
+  max-width: 1700px;
+  left: -100px;
+  top: 680px;
+  -webkit-animation: cloud-11 168s linear infinite;
+  -moz-animation: cloud-11 168s linear infinite;
+  -o-animation: cloud-11 168s linear infinite;
+}
+
+@-webkit-keyframes cloud-11 {
+  0% {
+    transform: translateX(-10vw);
+  }
+  100% {
+    transform: translateX(-100vw);
+  }
+}
+
 
 
 @media only screen and (max-width: 768px){
