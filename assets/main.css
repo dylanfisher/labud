@@ -211,7 +211,7 @@ h1 {
 }
 
 .cloud-6 {
-  max-width: 1480px;
+  max-width: 800px;
   min-width: 900px;
   right: -400px;
   bottom: 60px;
@@ -268,7 +268,7 @@ h1 {
 }
 
 .cloud-9 {
-  max-width: 500px;
+  max-width: 300px;
   left: 30%;
   top: 10%;
   -webkit-animation: cloud-9 170s linear infinite;
