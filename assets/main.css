@@ -87,7 +87,7 @@ h1 {
 }
 
 .marker {
-  color: white;
+  color: #FF7893;
   font-size: 75px;
 }
 
@@ -350,6 +350,10 @@ h1 {
     .marker {
       font-size: 48px;
     }
+
+
+
+
     .services p, .social p {
       font-size: 18px;
     }
