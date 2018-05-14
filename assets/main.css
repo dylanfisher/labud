@@ -189,7 +189,11 @@ h1 {
         overflow-x: hidden;
     }
     h1 {
-      font-size: 20px;
+      font-size: 30px;
+    }
+
+    .marker {
+      font-size: 35px;
     }
     .services p, .social p {
       font-size: 18px;
